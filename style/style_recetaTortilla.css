@@ -3,7 +3,6 @@ body {
     background-color: #FAF3E0;
     margin: 0;
     padding: 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,7 +32,32 @@ nav a {
 }
 
 main{
+    padding: 30px;
+    margin: 25px;
     flex:1;
+    background-color: #f5efbf;
+    border-radius: 10px;
+}
+
+main .ingredientes{
+    background-color: #f0e9b1;
+    padding: 10px;
+    border-radius:10px ;
+}
+
+main .ingredientes ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+main .ingredientes h2{
+    text-align: center;
+}
+
+main img{
+    width: 55%;
+    border-radius: 10px;
 }
 
 .contacto {
@@ -45,15 +69,6 @@ main{
     padding: 20px;
     width: 50%;
     border-radius: 10px;
-}
-
-.banner {
-   
-}
-
-.info p {
-    font-size: 18px;
-    padding: 20px;
 }
 
 .info label {
