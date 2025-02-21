@@ -1,0 +1,17 @@
+header{
+    display: flex;
+}
+
+#logo_cabecera{
+    width:250px
+    
+}
+
+header a{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 32px;
+}
