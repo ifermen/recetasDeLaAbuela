@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header nav {
@@ -27,6 +30,10 @@ nav a {
 
 .icon{
     width: 32px;
+}
+
+main{
+    flex:1;
 }
 
 .contacto {
@@ -57,5 +64,5 @@ footer {
     margin-top: 20px;
     background-color: #F5E1A4;
     padding: 10px;
-    justify-content: end;
+    text-align: center;
 }
