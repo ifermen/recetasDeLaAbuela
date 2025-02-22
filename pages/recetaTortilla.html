@@ -9,26 +9,38 @@
 <body>
     <header>
         <nav>
-            <a href=""><img src="/imgs/icon/login_icon.svg" alt="icono de inicio de sesion"> Iniciar Sesión</a>
-            <a href="/index.html"><img src="/imgs/icon/home_icon.svg" alt="icono de inicio"> Volver</a>
+            <a href=""><img class="icon" src="/imgs/icon/login_icon.svg" alt="icono de inicio de sesion"> Iniciar Sesión</a>
+            <a href="/index.html"><img class="icon" src="/imgs/icon/home_icon.svg" alt="icono de inicio"> Volver</a>
             <img class="logo" src="/imgs/logoRecetasAbuela.png" alt="logo de recetas de la abuela">
-            <a href=""><img src="/imgs/icon/recetas_icon.svg" alt=""> Recetas</a>
-            <a href=""><img src="/imgs/icon/contacto_icon.svg" alt=""> Contactos</a>
+            <a href=""><img class="icon" src="/imgs/icon/recetas_icon.svg" alt=""> Recetas</a>
+            <a href="/pages/contacto.html"><img class="icon" src="/imgs/icon/contacto_icon.svg" alt=""> Contactos</a>
         </nav>
     </header>
     <main>
-        <h1>Tortilla de patatas</h1>
-        <img src="/imgs/food/tortilla-de-patats.jpg" alt="imagen de la tortilla de patatas">
-        <p>La tortilla de patatas es un plato muy típico de la gastronomía española. Es muy fácil de hacer y se puede comer tanto fría como caliente. Es un plato muy socorrido para cualquier ocasión.</p>
+        <div class="container">
+            <img src="/imgs/food/tortilla-de-patats.jpg" alt="imagen de la tortilla de patatas">
+            <div class="columna-descripcion">
+                <h1>Tortilla de patatas</h1>
+                <p class="descripcion">La tortilla de patatas es un plato muy típico de la gastronomía española. Es muy fácil de hacer y se puede comer tanto fría como caliente. Es un plato muy socorrido para cualquier ocasión.</p>
+                <div class="recomendacion">
+                <h2>Recomendación</h2>
+                <p>Usa un par de huevos extra o no cuajes demasiado la tortilla. ¡Que aproveche! 😋</p>
+                </div>
+            </div>
+        </div>
         <div class="ingredientes">
             <h2>Ingredientes</h2>
-            <ul>
-                <li>4 patatas</li>
-                <li>1 cebolla</li>
-                <li>6 huevos</li>
-                <li>Sal</li>
-                <li>Aceite de oliva</li>
-            </ul>
+            <div class="lista-ingredientes">
+                <ul class="columna">
+                    <li>4 patatas</li>
+                    <li>1 cebolla</li>
+                    <li>6 huevos</li>
+                </ul>
+                <ul class="columna">
+                    <li>Sal</li>
+                    <li>Aceite de oliva</li>
+                </ul>
+            </div>
         </div>
         <h2>Preparación</h2>
         <ol>

@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 30px;
     background-color: #FAF3E0;
     margin: 0;
     padding: 0;
@@ -7,6 +8,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+
+/*CABECERA*/
 
 header nav {
     background-color: #f0e9b1;
@@ -17,19 +21,19 @@ header nav {
 }
 
 nav .logo{
-    width: 250px;
+    width: 300px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    margin: 0 10px;
-    font-weight: bold;
 }
 
 .icon{
     width: 32px;
 }
+
+/*MAIN*/
 
 main{
     padding: 30px;
@@ -39,6 +43,27 @@ main{
     border-radius: 10px;
 }
 
+main .container{
+    display: flex;
+    gap: 120px;
+    margin-bottom: 40px;
+}
+
+main .columna-descripcion{
+    width: 40%;
+}
+
+.recomendacion{
+    background-color: #f0e9b1;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.recomendacion h2{
+    text-align: center;
+}
+
 main .ingredientes{
     background-color: #f0e9b1;
     padding: 10px;
@@ -46,9 +71,8 @@ main .ingredientes{
 }
 
 main .ingredientes ul{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    padding: 0;
+    width: 45%;
 }
 
 main .ingredientes h2{
@@ -56,24 +80,19 @@ main .ingredientes h2{
 }
 
 main img{
-    width: 55%;
-    border-radius: 10px;
-}
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f2c6;
-    margin: 50px auto;
-    padding: 20px;
     width: 50%;
     border-radius: 10px;
 }
 
-.info label {
-    font-weight: bold;
+.lista-ingredientes{
+    display: flex;
+    justify-content: space-between; 
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
 }
+
+/*FOOTER*/
 
 footer {
     margin-top: 20px;
