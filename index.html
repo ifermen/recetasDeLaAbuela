@@ -8,44 +8,53 @@
 </head>
 <body>
     <header>
-        <a id="boton_iniciar_sesion" href="">
-            <img class="icon" src="imgs/icon/login_icon.svg" alt="">
-            <p>Iniciar Sesión</p></a>
-        <img id="logo_cabecera" src="imgs/logoRecetasAbuela.png" alt="">
-        <a id="boton_receta" href="">
-            <img class="icon" src="imgs/icon/recetas_icon.svg" alt="">
-            <p>Recetas</p>
-        </a>
-        <a id="boton_contacto" href="/pages/contacto.html">
-            <img class="icon" src="imgs/icon/contacto_icon.svg" alt="">
-            <p>Contactos</p>
-        </a>
-    </header>
-    <section>
-        <h1>Bienvenidos a "Recetas de la Abuela"</h1>
-        <p>Aquí encontrarás esas recetas caseras que han pasado de generación en generación, llenas de amor, tradición y, sobre todo, un sabor inigualable. Desde guisos reconfortantes hasta postres que endulzan el alma, cada plato lleva el toque especial de las abuelas: ingredientes simples, paciencia y mucho cariño.</p>
-        <p>Si buscas el sabor de casa, estás en el lugar indicado. ¡Ponte el delantal y descubre el arte de la cocina tradicional!</p>
-    </section>
-    <section id="recetadia">
-        <h2>Recetas del Día</h2>
         <div>
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-            </article>
+            <a id="boton_iniciar_sesion" href="">
+                <img class="icon" src="imgs/icon/login_icon.svg" alt="">
+                <p>Iniciar Sesión</p>
+            </a>
         </div>
-    </section>
+        <div>
+            <img id="logo_cabecera" src="imgs/logoRecetasAbuela_recortado.png" alt="">
+        </div>
+        <div id="botones_derecha">
+            <a id="boton_receta" href="">
+                <img class="icon" src="imgs/icon/recetas_icon.svg" alt="">
+                <p>Recetas</p>
+            </a>
+            <a id="boton_contacto" href="/pages/contacto.html">
+                <img class="icon" src="imgs/icon/contacto_icon.svg" alt="">
+                <p>Contactos</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="seccion_introduccion">
+            <h1>Bienvenidos a "Recetas de la Abuela"</h1>
+            <p>Aquí encontrarás esas recetas caseras que han pasado de generación en generación, llenas de amor, tradición y, sobre todo, un sabor inigualable. Desde guisos reconfortantes hasta postres que endulzan el alma, cada plato lleva el toque especial de las abuelas: ingredientes simples, paciencia y mucho cariño.</p>
+            <p>Si buscas el sabor de casa, estás en el lugar indicado. ¡Ponte el delantal y descubre el arte de la cocina tradicional!</p>
+        </section>
+        <section class="seccion_receta">
+            <h1>Recetas del Día</h1>
+            <div id="lista_receta">
+                <article class="recetas_dia">
+                    <img class="imagenReceta" src="imgs/food/tortilla-de-patats.jpg" alt="">
+                    <h3>Torilla de Patatas</h3>
+                    <p>Tortilla tradicional de patatas al estilo de la abuela. Es muy sencilla no es necesario muchos ingredientes.</p>
+                </article>
+                <article class="recetas_dia">
+                    <img class="imagenReceta" src="imgs/food/papasConChoco.jpg" alt="">
+                    <h3>Tarta de Galletas</h3>
+                    <p>Tarta de galletas y chocolate ideal para celebraciones. Se pueden hacer con muchas variaciones.</p>
+                </article>
+                <article class="recetas_dia">
+                    <img class="imagenReceta" src="imgs/food/carrillada.jpg" alt="">
+                    <h3>Carrillada</h3>
+                    <p>Carrillada de cerdo con verduras. Tiene mucho sabor y es muy sana.</p>
+                </article>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>© Recetas de la abuela</p>
     </footer>
