@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Sawarabi Mincho';
+    src: url(../fonts/SawarabiMincho-Regular.ttf);
+}
+
+*{
+    font-family: 'Sawarabi Mincho';
+}
+
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+    padding-top: 120px;
+    background-color: #FEF8E5;
+}
+
+/*Cabecera*/
+header{
+    position: fixed; /* O 'absolute' si no quieres que sea fija al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_cabecera{
+    width:200;
+    height: 77px;
+}
+
+#botones_derecha{
+    margin-right: 20px;
+    display: flex;
+}
+
+#boton_receta{
+    margin-right: 20px;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #66645f;
+    font-size: 1vw;
+}
+
+.icon{
+    width: 32px;
+}
+
+/*Main*/
+main{
+    margin: 0 20% 0 20%;
+}
+
+/*Seccion Introduccion*/
+.seccion_introduccion{
+    justify-self: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+}
+
+h1{
+    font-size: 2vw;
+}
+
+.seccion_introduccion p{
+    font-size: 1vw;
+}
+
+/*Seccion Recetas*/
+
+.seccion_receta h1{
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+    background-color: #FFDC71;
+    border: #D4B75D solid 1px;
+    margin: 0;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.seccion_receta #lista_receta{
+    justify-self: center;
+    width: 90%;
+    background-color: #FFF1C6;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border:solid,1px, #B9A977;
+    border-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 7px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    background-color: #F2E3AD;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+article:hover{
+    transition-duration: 75ms;
+    width: 31%;
+}
+
+article.recetas_dia img{
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+    width: 100%;
+}
+article.recetas_dia h3{
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 1.5vw;
+    width: 100%;
+}
+article.recetas_dia p{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 10vw;
+}
+
+/*Pie*/
+footer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border:solid,1px, #C3C3C3;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    text-align: center;
+    color: #66645f
+}
