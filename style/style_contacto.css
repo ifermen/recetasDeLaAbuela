@@ -1,46 +1,65 @@
+@font-face {
+    font-family: 'Sawarabi Mincho';
+    src: url(../fonts/SawarabiMincho-Regular.ttf);
+}
+
 * {
+    font-family: 'Sawarabi Mincho';
     margin: 0;
     padding: 0;
     
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FAF3E0;
+    background-color: #FEF8E5;
+    font-size: 30px;
     text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
+/*Cabecera*/
 
 header nav {
-    background-color: #f0e9b1;
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
     display: flex;
     justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 nav .logo {
-    width: 250px;
+    width: 300px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #66645f;
     margin: 0 10px;
-    font-weight: bold;
 }
 
 .icon {
     width: 32px;
 }
 
+.cont1,.cont2{ 
+    gap: 10px;
+}
+
+
+.cont1 a:hover,.cont2 a:hover{
+    border-bottom: 5px solid #FFDC71;
+    transition: 0.3s;
+}
+
+/*Main*/
+
+
+main {
+    flex: 1;
+}
 
 .contacto {
     
@@ -62,13 +81,10 @@ nav a {
     border-radius: 10px;
 }
 
-.info p {
-    font-size: 2vw;
-}
 
 .info label {
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 section h1{
@@ -82,16 +98,24 @@ section h1{
     padding: 20px;
 }
 
+p{
+    color: #66645f;
+    font-size: 1.3vw;
+}
+
+/*footer*/
+
 footer {
-    background-color: #f0e9b1;
+    margin-top: 20px;
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
     text-align: center;
-    padding: 30px;
+    padding: 35px;
 }
 
 .cont1,.cont2{ 
     gap: 10px;
 }
-
 
 .cont1 a:hover,.cont2 a:hover{
     border-bottom: 5px solid #FFDC71;
@@ -99,7 +123,7 @@ footer {
     transition: 0.3s;
         }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .cabecera{
         
         display: flex;
