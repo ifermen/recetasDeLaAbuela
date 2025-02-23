@@ -163,8 +163,22 @@ footer {
 }
 
 @media (max-width: 1700px) {
+
+    .logo{
+        order:1;
+    }
+    .cont1{
+        order: 2;
+    }
+
+    .cont2{
+        width: 9em;
+        order:3;
+    }
+
     body{
         font-size: 20px;
+        padding-top: 325px;
     }
 
     .cabecera{
@@ -210,6 +224,11 @@ footer {
 }
 
 @media (max-width: 830px) {
+    body{
+        font-size: 20px;
+        padding-top: 325px;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
