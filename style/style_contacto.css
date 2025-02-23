@@ -1,23 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #FAF3E0;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
+
+main {
+    flex: 1;
+}
+
 
 header nav {
     background-color: #f0e9b1;
     display: flex;
     justify-content: space-between;
-    justify-content: space-around;
     align-items: center;
 }
 
-nav .logo{
+nav .logo {
     width: 250px;
 }
 
@@ -28,42 +37,85 @@ nav a {
     font-weight: bold;
 }
 
-.icon{
+.icon {
     width: 32px;
 }
 
-main{
-    flex:1;
-}
 
 .contacto {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f2c6;
-    margin: 50px auto;
-    padding: 20px;
-    width: 50%;
+    margin: 90px;
     border-radius: 10px;
 }
 
-.banner {
-   
+.info {
+    
+    background-color: #f8f2c6;
+    align-items: center;
+    width: 80%;
+    padding: 80px;
+    border-radius: 10px;
+    gap: 100px;
+    border-radius: 10px;
 }
 
 .info p {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 2vw;
 }
 
 .info label {
     font-weight: bold;
+    font-size: 2.5vw;
+}
+
+section h1{
+    border-radius: 10px;
+    width: 85vw;
+    justify-self: center;
+    text-align: center;
+    background-color: #FFDC71;
+    border: #D4B75D solid 1px;
+    margin: 0;
+    padding: 20px;
 }
 
 footer {
-    margin-top: 20px;
     background-color: #f0e9b1;
-    padding: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 30px;
+}
+
+.cont1,.cont2{ 
+    gap: 10px;
+}
+
+
+.cont1 a:hover,.cont2 a:hover{
+    border-bottom: 5px solid #FFDC71;
+    /*border-bottom:5px solid #FFDC71;*/
+    transition: 0.3s;
+        }
+
+@media (max-width: 768px) {
+    .cabecera{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .cont1,.cont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    
+    .cont1 a:hover,.cont2 a:hover{
+        border-bottom:5px solid #FFDC71;
+        transition: 0.3s;
+            }
 }

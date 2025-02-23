@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Sawarabi Mincho';
+    src: url(../fonts/SawarabiMincho-Regular.ttf);
+}
+
+*{
+    font-family: 'Sawarabi Mincho';
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    background-color: #FEF8E5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Cabecera*/
+header nav {
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo {
+    width: 300px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #66645f;
+    margin: 0 10px;
+}
+
+.icon {
+    width: 32px;
+}
+
+.cont1,.cont2{ 
+    gap: 10px;
+}
+
+
+.cont1 a:hover,.cont2 a:hover{
+    border-bottom: 5px solid #FFDC71;
+    transition: 0.3s;
+}
+
+
+/*Main*/
+
+main{
+    padding: 30px;
+    margin: 25px;
+    flex:1;
+    background-color: #FFF1C6;
+    border:solid,1px, #B9A977;
+    border-radius: 10px;
+}
+
+main .container{
+    display: flex;
+    gap: 180px;
+    margin-bottom: 40px;
+}
+
+main .columna-descripcion{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.recomendacion{
+    background-color: #F2E3AD;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.recomendacion h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+li, p {
+    color: #66645f;
+}
+
+main .ingredientes{
+    background-color: #F2E3AD;
+    padding: 10px;
+    border-radius:10px ;
+    margin-bottom: 40px;
+}
+
+main .ingredientes ul{
+    padding: 0;
+    width: 45%;
+}
+
+main .ingredientes h2{
+    text-align: center;
+}
+
+main img{
+    width: 35%;
+    border-radius: 10px;
+}
+
+.lista-ingredientes{
+    display: flex;
+    justify-content: space-between; 
+    width: 1500px;
+    padding: 25px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.lista-ingredientes-tortilla{
+    display: flex;
+    justify-content: space-between; 
+    width: 500px;
+    padding: 25px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+ol{
+    padding: 55px;
+}
+
+/*Footer*/
+
+footer {
+    margin-top: 20px;
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
+    padding: 10px;
+    text-align: center;
+    padding: 35px;
+}
+
+
+@media (max-width: 1000px) {
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .cont1,.cont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    
+    .cont1 a:hover,.cont2 a:hover{
+        border-bottom:5px solid #FFDC71;
+        transition: 0.3s;
+    }
+}
