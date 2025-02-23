@@ -22,10 +22,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 120px;
 }
 
 /*Cabecera*/
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 header nav {
     background-color: #F2E3AD;
