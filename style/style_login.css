@@ -1,3 +1,125 @@
+@font-face {
+    font-family: 'Sawarabi Mincho';
+    src: url(../fonts/SawarabiMincho-Regular.ttf);
+}
+
+*{
+    font-family: 'Sawarabi Mincho';
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../imgs/fondo_login.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    background-color: #FEF8E5;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 2%;
+    border-radius: 20px;
+    padding-bottom: 2.5%;
+}
+
+h1{
+    align-self: center;
+    font-size: 1.75vw;
+}
+
+a{
+    font-size: 1vw;
+}
+
 form{
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    justify-content: space-between;
 }
+
+label{
+    font-size: 1vw;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.input input{
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1vw;
+}
+
+input{
+    height: 10%;
+    font-size: 1vw;
+}
+
+.boton{
+    background-color: #FFDC71;
+    border-color: #D4B75D;
+    border-right-color: #D4B75D;
+    border-bottom-color: #D4B75D;
+    font-size: 1vw;
+    border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+    .formulario{
+        width: 90%;
+        height: auto;
+    }
+    form{
+        gap: 30px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    label{
+        height: 20%;
+        font-size: 20px;
+    }
+
+    .input{
+        height: auto;
+    }
+ 
+    .input input{
+        font-size: 20px;
+        height: 60%;
+    }
+
+    input{
+        font-size:20px;
+        height: 50px;
+    }
+
+    a{
+        font-size: 20px;
+    }
+    
+    .boton{
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
