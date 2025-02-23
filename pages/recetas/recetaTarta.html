@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receta tarta</title>
-    <link rel="stylesheet" href="/style/style_recetas.css">
+    <link rel="stylesheet" href="/style/style_recetas/style_recetas.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href=""><img class="icon" src="/imgs/icon/login_icon.svg" alt="icono de inicio de sesion"> Iniciar Sesión</a>
-            <a href="/index.html"><img class="icon" src="/imgs/icon/home_icon.svg" alt="icono de inicio"> Volver</a>
-            <img class="logo" src="/imgs/logoRecetasAbuela.png" alt="logo de recetas de la abuela">
-            <a href=""><img class="icon" src="/imgs/icon/recetas_icon.svg" alt=""> Recetas</a>
-            <a href="/pages/contacto.html"><img class="icon" src="/imgs/icon/contacto_icon.svg" alt=""> Contactos</a>
+        <nav class="cabecera">
+            <div class="cont1">
+                <a href="/pages/login/login.html"><img src="/imgs/icon/login_icon.svg" alt="icono de inicio de sesion"> Iniciar Sesión</a>
+                <a href="/index.html"><img src="/imgs/icon/home_icon.svg" alt="icono de inicio"> Volver</a>
+            </div>
+            <img class="logo" src="/imgs/logoRecetasAbuela_recortado.png" alt="logo de recetas de la abuela">
+            <div class="cont2">
+                <a href="/pages/lista_receta.html"><img src="/imgs/icon/recetas_icon.svg" alt=""> Recetas</a>
+                <a href="/pages/contacto.html"><img src="/imgs/icon/contacto_icon.svg" alt=""> Contactos</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -21,7 +25,8 @@
             <img src="/imgs/food/tarta-de-galletas-y-chocolate.jpg" alt="imagen de la tarta de chocolate">
             <div class="columna-descripcion">
                 <h1>Tarta de galleta</h1>
-                <p class="descripcion">Tarta de galletas y chocolate ideal para celebraciones. Se pueden hacer con muchas variaciones.</p>
+                <p class="descripcion">La tarta de galletas es ese dulce de siempre, el que nos transporta a los cumpleaños en familia y a las meriendas en casa de la abuela.</p>
+                <p class="descripcion">Sigue nuestra receta y disfruta de un bocado lleno de nostalgia y amor casero. ¡Porque los mejores recuerdos siempre tienen un toque de chocolate!</p>
                 <div class="recomendacion">
                 <h2>Recomendación</h2>
                 <p>Lo ideal es dejarla en la nevera toda la noche para que las galletas absorban bien la crema y la tarta coja la textura perfecta.</p>
@@ -30,7 +35,7 @@
         </div>
         <div class="ingredientes">
             <h2>Ingredientes</h2>
-            <div class="lista-ingredientes">
+            <div class="lista-ingredientes-tarta">
                 <ul class="columna">
                     <li>1 litro de leche entera</li>
                     <li>200 g de azúcar</li>
@@ -46,30 +51,32 @@
                 </ul>
             </div>
         </div>
-        <h2>Preparación</h2>
-        <ol>
-            <li>Preparar la crema de chocolate:</li>
-            <ul>
-                <li>En un cazo, calienta el litro de leche a fuego medio (reserva un vaso aparte).</li>
-                <li>Añade el azúcar y la esencia de vainilla, removiendo bien.</li>
-                <li>Derrite el chocolate negro en la leche caliente, removiendo hasta que quede una mezcla homogénea.</li>
-                <li>Disuelve la maicena en el vaso de leche fría que reservaste antes y agrégalo a la mezcla poco a poco, sin dejar de remover.</li>
-                <li>Cocina a fuego medio-bajo hasta que espese (unos 10-15 minutos). Luego, retira del fuego y añade la mantequilla para darle un toque extra cremoso.</li>
-            </ul><br>
-        
-            <li>Montar la tarta:</li>
-            <ul>
-                <li>En un molde rectangular o redondo, coloca una capa de galletas previamente mojadas en leche (rápidamente, para que no se deshagan).</li>
-                <li>Cubre con una capa de crema de chocolate.</li>
-                <li>Repite el proceso alternando capas de galletas y chocolate hasta terminar la mezcla.</li>
-            </ul><br>
-        
-            <li>Refrigerar y decorar:</li>
-            <ul>
-                <li>Deja enfriar a temperatura ambiente y luego refrigera mínimo 4 horas (mejor si es de un día para otro).</li>
-                <li>Antes de servir, espolvorea cacao en polvo o fideos de chocolate por encima.</li>
-            </ul>
-        </ol>        
+        <div class="Preparacion">
+            <h2>Preparación</h2>
+            <ol>
+                <li>Preparar la crema de chocolate:</li>
+                <ul>
+                    <li>En un cazo, calienta el litro de leche a fuego medio (reserva un vaso aparte).</li>
+                    <li>Añade el azúcar y la esencia de vainilla, removiendo bien.</li>
+                    <li>Derrite el chocolate negro en la leche caliente, removiendo hasta que quede una mezcla homogénea.</li>
+                    <li>Disuelve la maicena en el vaso de leche fría que reservaste antes y agrégalo a la mezcla poco a poco, sin dejar de remover.</li>
+                    <li>Cocina a fuego medio-bajo hasta que espese (unos 10-15 minutos). Luego, retira del fuego y añade la mantequilla para darle un toque extra cremoso.</li>
+                </ul><br>
+            
+                <li>Montar la tarta:</li>
+                <ul>
+                    <li>En un molde rectangular o redondo, coloca una capa de galletas previamente mojadas en leche (rápidamente, para que no se deshagan).</li>
+                    <li>Cubre con una capa de crema de chocolate.</li>
+                    <li>Repite el proceso alternando capas de galletas y chocolate hasta terminar la mezcla.</li>
+                </ul><br>
+            
+                <li>Refrigerar y decorar:</li>
+                <ul>
+                    <li>Deja enfriar a temperatura ambiente y luego refrigera mínimo 4 horas (mejor si es de un día para otro).</li>
+                    <li>Antes de servir, espolvorea cacao en polvo o fideos de chocolate por encima.</li>
+                </ul>
+            </ol>
+        </div>        
     </main>
     <footer>
         <p>&copy; Recetas de la abuela</p>
