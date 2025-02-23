@@ -69,13 +69,12 @@ nav a {
 }
 
 .lateral nav{
-    width: 80%;
+    width: 90%;
     flex-direction: column;
 }
 
 section>nav{
     justify-self: center;
-    width: 90%;
     background-color: #FFF1C6;
     border-radius: 30px;
     border-top-left-radius: 0;
@@ -84,7 +83,6 @@ section>nav{
     border-top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     padding-top: 7px;
 }
 
@@ -92,6 +90,24 @@ section>nav{
     text-decoration: none;
     color: #66645f;
     font-size: 1.25vw;
+}
+
+.lateral ul{
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lateral li{
+    width: fit-content;
+}
+
+.lateral li:hover{
+    color: black;
+    border-bottom: black solid 3px;
+    transition: 0.05s;
 }
 
 /*Lista*/
@@ -158,4 +174,64 @@ footer {
     border:solid,1px, #C3C3C3 ;
     text-align: center;
     padding: 35px;
+}
+
+@media (max-width: 1700px) {
+    .logo{
+        order:1;
+    }
+    .cont1{
+        order: 2;
+    }
+
+    .cont2{
+        width: 9em;
+        order:3;
+    }
+
+    body{
+        font-size: 20px;
+    }
+
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .cont1,.cont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cont1 a:hover,.cont2 a:hover{
+        border-bottom:5px solid #FFDC71;
+        transition: 0.3s;
+    }
+
+    .lateral{
+        top:350px
+    }
+    body{
+        padding-top: 325px;
+    }
+}
+
+@media(max-width:1000px){
+    section>div{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    article{
+        margin-bottom: 4%;
+        width: 90%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    li{
+        font-size: 15px;
+    }
 }
