@@ -15,7 +15,6 @@ a{
 
 
 body {
-    font-family: Arial, sans-serif;
     font-size: 30px;
     background-color: #FEF8E5;
     margin: 0;
@@ -26,6 +25,8 @@ body {
 }
 
 /*Cabecera*/
+
+
 header nav {
     background-color: #F2E3AD;
     border:solid,1px, #C3C3C3 ;
@@ -150,13 +151,11 @@ footer {
     margin-top: 20px;
     background-color: #F2E3AD;
     border:solid,1px, #C3C3C3 ;
-    padding: 10px;
     text-align: center;
     padding: 35px;
 }
 
-
-@media (max-width: 1000px) {
+@media (max-width: 1700px) {
     .cabecera{
         display: flex;
         flex-direction: column;
@@ -167,11 +166,60 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10px;
-
     }
     
     .cont1 a:hover,.cont2 a:hover{
         border-bottom:5px solid #FFDC71;
         transition: 0.3s;
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .columna-descripcion{
+        width: 100%;
+        gap: 50px;
+    }
+
+    .lista-ingredientes{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .container img{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .columna-descripcion{
+        width: 100%;
+        gap: 50px;
+    }
+
+    .lista-ingredientes{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .container img{
+        width: 60%;
+    }
+
 }
