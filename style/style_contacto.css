@@ -17,9 +17,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 120px;
 }
 
 /*Cabecera*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 header nav {
     background-color: #F2E3AD;
@@ -71,20 +78,26 @@ main {
 }
 
 .info {
-    
+    justify-self: center;
+    width: 90%;
     background-color: #FFF1C6;
-    align-items: center;
-    width: 80%;
-    padding: 80px;
-    border-radius: 10px;
-    gap: 100px;
-    border-radius: 10px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border:solid,1px, #B9A977;
+    border-top: 0;
+    gap:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 7px;
 }
 
 
 .info label {
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 section h1{
@@ -100,7 +113,24 @@ section h1{
 
 p{
     color: #66645f;
-    font-size: 1.5vw;
+    font-size: 20px;
+}
+
+.tabla caption{
+    font-size: 30px;
+}
+
+.tabla{
+    align-self: center;
+    background-color: #FEF8E5;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
 /*footer*/
@@ -176,6 +206,10 @@ footer p {
 
     footer p {
         font-size: 2vw;
+    }
+
+    body{
+        padding-top: 325px;
     }
 
 }
