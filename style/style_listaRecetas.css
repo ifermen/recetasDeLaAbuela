@@ -17,50 +17,44 @@ body{
 
 /*Cabecera*/
 header{
-    position: fixed; /* O 'absolute' si no quieres que sea fija al hacer scroll */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    margin: 0;
-    padding: 10px;
-    display: flex;
+}
+
+header nav {
     background-color: #F2E3AD;
     border:solid,1px, #C3C3C3 ;
+    display: flex;
     justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-#logo_cabecera{
-    width:200;
-    height: 77px;
+nav .logo {
+    width: 300px;
 }
 
-#botones_derecha{
-    margin-right: 20px;
-    display: flex;
-}
-
-#boton_receta{
-    margin-right: 20px;
-}
-
-header a{
-    display: flex;
-    align-items: center;
+nav a {
+    font-size: 20px;
     text-decoration: none;
     color: #66645f;
-    font-size: 1vw;
+    margin: 0 10px;
 }
 
-.icon{
+.icon {
     width: 32px;
 }
 
-main{
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
+.cont1,.cont2{ 
+    gap: 10px;
+}
+
+
+.cont1 a:hover,.cont2 a:hover{
+    border-bottom: 5px solid #FFDC71;
+    transition: 0.3s;
 }
 
 /*Categoria*/
@@ -157,29 +151,11 @@ article img{
     color: black;
 }
 
-/*Pie*/
-footer{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    margin-top: 50px;
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border:solid,1px, #C3C3C3;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-}
-
-footer p{
-    padding: 0;
-    margin: 0;
-    justify-self: center;
+/*Footer*/
+footer {
+    margin-top: 20px;
+    background-color: #F2E3AD;
+    border:solid,1px, #C3C3C3 ;
     text-align: center;
-    color: #66645f
+    padding: 35px;
 }

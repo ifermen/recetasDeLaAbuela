@@ -8,25 +8,17 @@
 </head>
 <body>
     <header>
-        <div>
-            <a id="boton_iniciar_sesion" href="">
-                <img class="icon" src="imgs/icon/login_icon.svg" alt="">
-                <p>Iniciar Sesión</p>
-            </a>
-        </div>
-        <div>
-            <img id="logo_cabecera" src="imgs/logoRecetasAbuela_recortado.png" alt="">
-        </div>
-        <div id="botones_derecha">
-            <a id="boton_receta" href="pages/lista_receta.html">
-                <img class="icon" src="imgs/icon/recetas_icon.svg" alt="">
-                <p>Recetas</p>
-            </a>
-            <a id="boton_contacto" href="/pages/contacto.html">
-                <img class="icon" src="imgs/icon/contacto_icon.svg" alt="">
-                <p>Contactos</p>
-            </a>
-        </div>
+        <nav class="cabecera">
+            <div class="cont1">
+                <a href="/pages/login/login.html"><img src="/imgs/icon/login_icon.svg" alt="icono de inicio de sesion"> Iniciar Sesión</a>
+                <a href="/index.html" hidden><img src="/imgs/icon/home_icon.svg" alt="icono de inicio"> Volver</a>
+            </div>
+            <img class="logo" src="/imgs/logoRecetasAbuela_recortado.png" alt="logo de recetas de la abuela">
+            <div class="cont2">
+                <a href="/pages/lista_receta.html"><img src="/imgs/icon/recetas_icon.svg" alt=""> Recetas</a>
+                <a href="/pages/contacto.html"><img src="/imgs/icon/contacto_icon.svg" alt=""> Contactos</a>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="seccion_introduccion">
@@ -62,7 +54,7 @@
         </section>
     </main>
     <footer>
-        <p>© Recetas de la abuela</p>
+        <p>&copy; Recetas de la abuela</p>
     </footer>
 </body>
 </html>
