@@ -86,7 +86,7 @@ main .container{
 }
 
 main .columna-descripcion{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -223,10 +223,42 @@ footer {
 
 }
 
-@media (max-width: 830px) {
+@media (max-width: 688px) {
+
+    .logo{
+        order:1;
+    }
+    .cont1{
+        order: 2;
+    }
+
+    .cont2{
+        width: 9em;
+        order:3;
+    }
+
     body{
         font-size: 20px;
         padding-top: 325px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .cont1,.cont2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cont1 a:hover,.cont2 a:hover{
+        border-bottom:5px solid #FFDC71;
+        transition: 0.3s;
     }
 
     .container{
@@ -234,16 +266,17 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 50px;
+        width: 100%;
     }
 
     .columna-descripcion{
-        width: 100%;
         gap: 50px;
+        margin-top: -100px;
     }
 
+   
     .lista-ingredientes{
-        display: flex;
-        flex-direction: column;
+        
         gap: 40px;
         width: 100%;
     }
@@ -251,5 +284,16 @@ footer {
     .container img{
         width: 60%;
     }
-
+    .lista-ingredientes-tortilla{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .container img{
+        width: 100%;
+        
+        
+    }
 }
