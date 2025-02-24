@@ -33,6 +33,29 @@
                 <label for="passwordConfirm">Confirmar Contraseña</label>
                 <input id="passwordConfirm" type="password">
             </div>
+            <div>
+                <div id="containerGenero">
+                    <label for="" id="labelGenero">Género</label><br>
+                    <input type="radio" name="gender" id="hombre"><label for="hombre">Hombre</label>
+                    <input type="radio" name="gender" id="mujer"><label for="mujer">Mujer</label>
+                </div>
+                <div>
+                    <label for="provincia">Seleciona tu provincia</label>
+                    <select name="provincia" id="provincia">
+                        <option value="" selected>-- Selecciona --</option>
+                        <option value="Huelva">Huelva</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Cadiz">Cádiz</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="Malaga">Málaga</option>
+                        <option value="Jaen">Jaén</option>
+                        <option value="Almeria">Almería</option>
+                    </select>
+                </div>
+            </div>
+            <div class="containerCheckbox">
+                <input type="checkbox" name="terminosAceptados" id="terminosAceptados"><label for="terminosAceptados">Acepto los terminos y condiciones de la web</label>
+            </div>
             <input class="boton" type="submit" value="Registrarse">
             <input class="boton" type="button" value="Cancelar" onclick="window.location.href='login.html'">
         </form>
