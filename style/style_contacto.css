@@ -201,19 +201,23 @@ footer p {
     }
 
     .info label{
-        font-size: 15px;
+        font-size: 18.5px;
     }
 
     p{
-        font-size: 10px;
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 20px;
     }
 
     nav a {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     footer p {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     body{
@@ -221,8 +225,14 @@ footer p {
     }
 
     .tabla{
-        width: 50px;
+        width: 70%;
+        font-size: 18.5px;
     }
+
+    .tabla caption{
+        font-size: 18.5px;
+    }
+
     .celda_nombre{
         display: none;
     }
