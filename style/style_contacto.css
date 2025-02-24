@@ -194,10 +194,18 @@ footer p {
     .cont1 a:hover,.cont2 a:hover{
         border-bottom:5px solid #FFDC71;
         transition: 0.3s;
-            }
+    }
+
+    .info img{
+        font-size: 15px;
+    }
+
+    .info label{
+        font-size: 15px;
+    }
 
     p{
-        font-size: 2vw;
+        font-size: 10px;
     }
 
     nav a {
@@ -212,4 +220,10 @@ footer p {
         padding-top: 325px;
     }
 
+    .tabla{
+        width: 50px;
+    }
+    .celda_nombre{
+        display: none;
+    }
 }

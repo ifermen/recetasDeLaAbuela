@@ -66,6 +66,8 @@ nav a {
     height: calc(100vh - 110px); /* Para ocupar el alto restante de la pantalla */
     overflow-y: auto; /* Permitir scroll si el contenido es muy grande */
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .lateral nav{
@@ -84,6 +86,7 @@ section>nav{
     display: flex;
     justify-content: space-between;
     padding-top: 7px;
+    align-self: center;
 }
 
 .lateral a{
@@ -232,6 +235,15 @@ footer {
         font-size: 20px;
     }
     li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 15px;
+    }
+    .lateral a{
         font-size: 15px;
     }
 }
