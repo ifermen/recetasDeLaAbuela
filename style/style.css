@@ -164,7 +164,9 @@ footer {
     background-color: #F2E3AD;
     border:solid,1px, #C3C3C3 ;
     text-align: center;
-    padding: 35px;
+    font-size: 25px;
+    padding: 15px;
+    color: #66645f;
 }
 
 @media (max-width: 1700px) {
